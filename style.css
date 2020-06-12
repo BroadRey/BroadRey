@@ -1,0 +1,471 @@
+@font-face {
+    src: url(./fonts/TTLakes-Medium.ttf);
+    font-family: "TT Lakes-Medium";
+}
+  
+@font-face {
+    src: url(./fonts/TTLakes-Bold.ttf);
+    font-family: "TT Lakes-Bold";
+}
+  
+@font-face {
+    src: url(./fonts/TTLakes-DemiBold.ttf);
+    font-family: "TT Lakes-Demi";
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.html {
+    background: #F8F8F8;
+    box-sizing: border-box;
+    font-family: "TT Lakes-Medium";
+}
+
+.body {
+    min-width: 320px;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    background: #FFFFFF;
+}
+
+.body__header {
+    padding: 0 16px 17px 16px;
+    border-bottom: 1px solid #D9FFF5;
+}
+
+.header div:last-child {
+    margin-right: 0;
+}
+
+.inner {
+    display: flex;
+    flex-grow: 1;
+}
+
+.header__inner {
+    padding-top: 18px;
+}
+
+.inner__link-block {
+    margin-top: 6px;
+    margin-right: 16px;
+}
+
+.inner__link {
+    position: relative;
+}
+
+.inner__link::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 114px;
+    width: 2px;
+    height: 32px;
+    background: #EAEAEA;
+    border-radius: 1px;
+}
+
+.link-block {
+    font-size: 0;
+}
+
+.header__link-block {
+    margin-top: 24px;
+    margin-right: 16px;
+}
+
+.link-block--screen--tablet,
+.link-block--screen--desctop,
+.services-section__subtitle-block {
+    display: none;
+}
+
+.services-section__header {
+    margin-bottom: 24px;
+}
+
+.link-block__link {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: #FF3E79;
+    border-radius: 20px;
+    position: relative;
+}
+
+.link-block__link--hover:hover {
+    background: #7E7E82;
+}
+
+.link-block__link--theme--menu::after {
+    content: url("./img/menu-icon.png");
+    position: absolute;
+    left: 11px;
+    top: 12px;
+}
+
+.link-block__link--theme--phone::after {
+    content: url("./img/phone-icon.png");
+    position: absolute;
+    left: 11px;
+    top: 11px;
+}
+
+.link-block__link--theme--message::after {
+    content: url("./img/message-icon.png");
+    position: absolute; 
+    left: 10px;
+    top: 11px;
+}
+
+.link-block__link--theme--message::after {
+    content: url("./img/message-icon.png");
+    position: absolute;
+    left: 10px;
+    top: 11px;
+}
+
+.link-block__link--theme--profile::after {
+    content: url("./img/profile_icon.png");
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.link-block__link--theme--tools::after {
+    content: url("./img/tools_icon.png");
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.link-block__link--theme--magnifier::after {
+    content: url("./img/magnifier_icon.png");
+    position: absolute;
+    left: 12px;
+    top: 10px;
+}
+
+.main__services-section {
+    padding: 24px 0 35px 16px;
+}
+
+.services-section__heading {
+    position: relative;
+    font-family: "TT Lakes-Bold";
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    margin-bottom: 24px;
+}
+
+.services-section__heading::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    width: 4px;
+    height: 40px;
+    background: #41F6D7;
+}
+
+.services-section__list {
+    display: flex;
+    overflow-x: scroll;
+    list-style: none;
+}
+
+.services-section__list-item {
+    border: 1px solid #F8F8F8;
+    padding: 8px 0;
+}
+
+.services-section__list ul:last-child {
+    margin-right: 0;
+}
+
+.services-section__link {
+    white-space: nowrap;
+    font-family: "TT Lakes-Medium";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    text-decoration: none;
+    margin: 0 17px; 
+}
+
+.services-section__list-item--hover:hover {
+    border: 1px solid #41F6D7;
+    border-radius: 6px; 
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.services-section__list::-webkit-scrollbar {
+    display: none;
+}
+
+.services-section__content-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-section__text-block {
+    font-size: 0;
+    margin-right: 16px;
+}
+
+.services-section__text {
+    font-family: "TT Lakes-Medium";
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    margin-bottom: 16px;
+}
+
+.services-section__tablet-text,
+.services-section__desctop-text {
+    display: none;
+}
+
+.services-section__read-more {
+    font-family: "TT Lakes-Demi";
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    margin-left: 32px;
+    position: relative;
+    border-bottom: solid #F8F8F8 1px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.services-section__read-more--hover:hover {
+    border-bottom: 1px solid #D9FFF5;
+}
+
+.services-section__read-more--viseted {
+    color: #1B1C21;
+}
+
+.services-section__read-more::before {
+    content: url("./img/read-more-button-arows_icon.png");
+    position: absolute;
+    left: -24px;
+}
+
+.services-section__img-block {
+    margin-left: -16px;
+}
+
+.services-section__img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .body__header {
+        padding: 0 24px 18px 24px;
+    }
+
+    .header div:first-child {
+        margin-right: 42px;
+    }
+
+    .header div:nth-child(4) {
+        margin-right: 42px;
+    }
+
+    .header div:nth-child(4) .link-block__link::before {
+        content: "";
+        position: absolute;
+        left: 60px;
+        top: 4px;
+        width: 2px;
+        height: 32px;
+        background: #EAEAEA;
+        border-radius: 1px;
+
+    }
+
+    .link-block--screen--tablet {
+        display: block;
+    }
+
+    .inner__link::after {
+        content: "";
+        display: none;
+    }
+
+    .inner__link::before {
+        content: "";
+        position: absolute;
+        right: 118px;
+        top: 10px;
+        width: 2px;
+        height: 32px;
+        background: #EAEAEA;
+        border-radius: 1px;
+    }
+
+    .main__services-section {
+        padding: 24px 0 40px 24px;
+    }
+
+    .services-section__header {
+        margin-bottom: 32px;
+    }
+
+    .services-section__heading {
+        margin-bottom: 32px;
+    }
+
+    .services-section__heading::before {
+        content: "";
+        position: absolute;
+        left: -24px;
+        width: 4px;
+        height: 40px;
+        background: #41F6D7;
+    }
+
+    .services-section__link {
+        margin: 0 22px; 
+    }
+
+    .services-section__content-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .services-section__text-block {
+        margin-right: 0;
+        flex-basis: 312px;
+        flex-grow: 1.1;
+    }
+
+    .services-section__text {
+        margin-bottom: 10px;
+    }
+
+    .services-section__tablet-text {
+     display: inline;
+    }
+
+    .services-section__read-more {
+        margin-bottom: 0;
+    }
+
+    .services-section__img-block {
+        margin-left: 48px;
+        margin-right: 25px;
+        flex-basis: 360px;
+        font-size: 0;
+        flex-grow: 1;
+    }
+    .services-section__img {
+        border-radius: 6px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .header--screen--desctop {
+        display: none;
+    }
+
+    .link-block--screen--desctop,
+    .services-section__subtitle-block {
+        display: block;
+    }
+
+    .main__services-section {
+        padding: 42px 28px 50px 32px;
+    }
+    
+    .services-section__header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-bottom: 12px;
+    }
+
+    .services-section__heading {
+        margin-bottom: 8px;
+    }
+
+    .services-section__subtitle-block {
+        font-family: "TT Lakes-Demi";
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        margin-top: 8px;
+        margin-right: 8px;
+        text-decoration: none;
+    }
+    
+    .services-section__subtitle {
+        text-decoration: none;
+    }
+
+    .services-section__subtitle--visited:visited {
+        color: #1B1C21;
+    }
+
+    .services-section__heading::before {
+        content: "";
+        position: absolute;
+        left: -32px;
+        width: 4px;
+        height: 40px;
+        background: #41F6D7;
+    }
+
+    .services-section__heading {
+        flex-grow: 1;
+    }
+
+    .services-section__header div:nth-of-type(2) {
+        margin-right: 32px;
+    }
+
+    .services-section__list {
+        flex-wrap: wrap;
+    }
+
+    .services-section__link {
+        margin: 0px 19px;
+    }
+   
+    .services-section__text {
+        margin-bottom: 14px;
+    }
+
+    .services-section__desctop-text {
+        display: inline;
+    }
+
+    .services-section__img-block {
+        margin-left: 36px;
+        margin-right: 0;
+    }
+}
