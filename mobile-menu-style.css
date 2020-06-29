@@ -283,6 +283,7 @@
     color: #1B1C21;
     display: inline-block;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .language:hover {
