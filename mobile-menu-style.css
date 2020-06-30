@@ -76,16 +76,12 @@
     height: 16px;
     top: 11px;
     left: 11px;
-    transition: transform 2s;
 }
 
 .button__exit--hover:hover {
     background: #7E7E82;
-}
-
-.button__exit--hover:hover::before  {
     transform: rotate(360deg);
-} 
+}
 
 .button__search {
     margin-top: 5px;
