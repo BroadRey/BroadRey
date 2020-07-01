@@ -41,7 +41,7 @@
 }
 
 .sidebar-nav__header {
-    padding: 18px 0 48px;
+    margin: 18px 0 48px;
     font-size: 0;   
 }
 
@@ -56,7 +56,7 @@
     display: inline-block;
     height: 40px;
     width: 40px;
-    background: #FF3E79;
+    background-color: #FF3E79;
     border-radius: 50%;
     cursor: pointer;
     outline: none;
@@ -66,44 +66,28 @@
 .button__exit {
     margin: 5px 16px 0 0;
     position: relative;
-    transition: transform 2s;
-}
-
-.button__exit::before {
-    content: url("./img/exit-icon.png");
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 11px;
-    left: 11px;
+    transition: transform 0.8s;
+    background: #FF3E79 url("./img/exit-icon.png") 11px 11px no-repeat;
 }
 
 .button__exit:hover {
-    background: #7E7E82;
-    transform: rotate(360deg);
+    background-color: #7E7E82;
+    transform: rotate(90deg);
 }
 
 .button__search {
     margin-top: 5px;
     position: relative;
+    background: #FF3E79 url("./img/search-icon.png") 11px 11px no-repeat;
 }
 
 .button__search:hover {
     animation: search 1s forwards;
-    background: #7E7E82;
-}
-
-.button__search::before {
-    content: url("./img/search-icon.png");
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 11px;
-    left: 11px;
+    background-color: #7E7E82;
 }
 
 .sidebar-nav__section {
-    padding-bottom: 268px;
+    margin-bottom: 268px;
 }
 
 .sidebar-nav__list {
@@ -175,22 +159,11 @@
 .button__phone {
     margin-right: 16px;
     position: relative;
-}
-
-.button__phone::before {
-    content: url("./img/phone-icon.png");
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 11px;
-    left: 11px;
+    background: #FF3E79 url("./img/phone-icon.png") 11px 11px no-repeat;
 }
 
 .button__phone:hover {
-    background: #7E7E82;
-}
-
-.button__phone:hover::before {
+    background-color: #7E7E82;
     animation: phone 1s infinite linear;
 }
 
@@ -280,15 +253,19 @@
     display: inline-block;
     cursor: pointer;
     text-transform: uppercase;
+    background: none;
 }
 
 .language:hover {
     color: #7E7E82;
 }
 
-.sidebar-nav__ru-language,
-.sidebar-nav__en-language {
+.sidebar-nav__language {
     margin-right: 7px;
+}
+
+.sidebar-nav__language--active {
+    color: #7E7E82;
 }
 
 @keyframes search {
