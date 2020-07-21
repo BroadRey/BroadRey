@@ -1,12 +1,63 @@
+@font-face {
+    src: url(./fonts/TTLakes-Medium.ttf);
+    font-family: "TT Lakes-Medium";
+}
+  
+@font-face {
+    src: url(./fonts/TTLakes-Bold.ttf);
+    font-family: "TT Lakes-Bold";
+}
+  
+@font-face {
+    src: url(./fonts/TTLakes-DemiBold.ttf);
+    font-family: "TT Lakes-Demi";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.technique-brands {
+    width: 100%;
+    min-width: 320px;
+    height: 234px;
+    box-sizing: border-box;
+}
+
+.technique-brands__header {
+    height: 80px;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    padding: 16px;
+}
+
+.technique-brands__text {
+    font-family: sans-serif, "TT Lakes-Medium";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.7;
+    text-transform: uppercase;
+    color: #7E7E82;
+}
+
+.swiper-button {
+    background: white;
+}
+
 .swiper-container {
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    height: 116px;
+    background: #F2F2F2;
+    margin-bottom: 38px;
 }
 
-.swiper-slide:first-child {
-    background: url("./img/company-logo/acer-logo.png");
-}
-
-.swiper-slide:nth-child(2) {
-    background: url("./img/company-logo/apple-logo.png");
+.swiper-slide {
+    background: white;
+    width: 240px;
+    height: 72px;
 }
