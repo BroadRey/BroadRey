@@ -52,7 +52,7 @@
 .brands-swiper-container {
     height: 116px;
     background: #F2F2F2;
-    margin: 0 0 38px 16px;
+    width: 95%;
 }
 
 .brands-swiper__slide {
