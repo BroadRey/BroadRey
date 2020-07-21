@@ -1,0 +1,12 @@
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
+
+.swiper-slide:first-child {
+    background: url("./img/company-logo/acer-logo.png");
+}
+
+.swiper-slide:nth-child(2) {
+    background: url("./img/company-logo/apple-logo.png");
+}
