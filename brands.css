@@ -53,6 +53,7 @@
     height: 116px;
     background: #F2F2F2;
     width: 95%;
+    margin: 0 0 0 16px;
 }
 
 .brands-swiper__slide {
@@ -62,7 +63,8 @@
     min-width: 240px;
     height: 72px;
     min-height: 72px;
-    min-height: 72px;
+    max-height: 72px;
     border: 1px solid #EAEAEA;
     border-radius: 6px;
+    margin-right: 16px;
 }
