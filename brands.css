@@ -48,6 +48,7 @@
 .brands-swiper-container {
     width: 240px;
     padding-top: 16px !important; 
+    background: #F2F2F2;
 }
 
 .brands-swiper__slide {
@@ -82,6 +83,8 @@
 .swiper-pagination-bullet {
     width: 12px !important;
     height: 12px !important;
+    background: #DDDDDD !important;
+    opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
