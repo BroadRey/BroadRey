@@ -144,10 +144,9 @@
         background: #F2F2F2;
         flex-wrap: wrap;
         padding: 24px 0 0 24px;
-    }
-
-    .brands-container__link:nth-child(n+7) {
-        display: none;
+        overflow: hidden;
+        height: 184px;
+        align-content: flex-start;
     }
 
     .brands-container__link {

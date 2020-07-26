@@ -16,12 +16,13 @@ let readMoreButton = document.querySelector('.read-more__button');
 let brandsContainer = document.querySelector('.brands-container');
 
 readMoreButton.addEventListener('click', function() {
-  for (let i = 0; i < allBrandLinks.length; i++) {
     //invisibleBrandLinks[i].classList.toggle('brands-container__link--invisible');
-    if (allBrandLinks[i].style.display === "none") {
-      allBrandLinks[i].style.display = "block";
+    if (getComputedStyle(brandsContainer).height === '184px') {
+      brandsContainer.style.height = '272px';
+    } else {
+      brandsContainer.style.height = '184px';
     }
-  }
+  
 
   for (let i = 0; i < allBrandLinks.length; i++) {  
     allBrandLinks[i].classList.toggle('brands-container--appearance');
