@@ -12,15 +12,23 @@ let mySwiper = new Swiper('.swiper-container', {
 
 let allBrandLinks = document.querySelectorAll('.brands-container__link');
 //let invisibleBrandLinks = document.querySelectorAll('.brands-container__link:nth-child(n+7)');
-let readMoreButton = document.querySelector('.read-more__button');
+let readMoreText = document.querySelector('.read-more__text');
 let brandsContainer = document.querySelector('.brands-container');
+let brandsWrapper = document.querySelector('.brands-wrapper');
+let readMoreArrows = document.querySelector('.read-more__arrows');
+let readMoreContainer = document.querySelector('.read-more');
 
-readMoreButton.addEventListener('click', function() {
+readMoreText.addEventListener('click', function() {
     //invisibleBrandLinks[i].classList.toggle('brands-container__link--invisible');
-    if (getComputedStyle(brandsContainer).height === '184px') {
-      brandsContainer.style.height = '272px';
+    if (getComputedStyle(brandsWrapper).height === '184px') {
+      brandsWrapper.style.height = '272px';
+      readMoreContainer.style.paddingTop = '46px';
+      readMoreArrows.style.transform = 'rotate(180deg)';
+      readMoreText.textContent = 'Скрыть';
     } else {
-      brandsContainer.style.height = '184px';
+      brandsWrapper.style.height = '184px';
+      readMoreArrows.style.transform = 'rotate(0deg)';
+      readMoreText.textContent = 'Показать все';
     }
   
 

@@ -23,6 +23,11 @@
     box-sizing: inherit;
 }
 
+.wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
 .technique-brands {
     width: 100%;
     min-width: 320px;
@@ -95,15 +100,21 @@
 }
 
 .brands-container {
+    display: flex;
+    justify-content: center;
+    background: #F2F2F2;
+}
+
+.brands-wrapper {
     display: none;
 }
 
-.brands-container--appearance {
+.brands-wrapper--appearance {
     animation: appearance 1s;
 }
 
 .read-more {
-    padding: 8px 0 34px 32px;
+    padding: 24px 0 34px 32px;
     background: #F2F2F2;
     display: none;
 }
@@ -139,7 +150,7 @@
         background: linear-gradient(270deg, #FFFFFF 1.39%, #F8F8F8);
     }
 
-    .brands-container {
+    .brands-wrapper {
         display: flex;
         background: #F2F2F2;
         flex-wrap: wrap;
@@ -147,9 +158,10 @@
         overflow: hidden;
         height: 184px;
         align-content: flex-start;
+        max-width: 768px;
     }
 
-    .brands-container__link {
+    .brands-wrapper__link {
         flex-basis: 224px;
         margin: 0 24px 16px 0;
     }
@@ -160,6 +172,21 @@
 
     .read-more {
         display: block;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .technique-brands__header {
+        padding: 16px 32px;
+    }
+    
+    .brands-wrapper {
+        padding-left: 32px;
+        max-width: 1120px;
+    }
+
+    .brands-wrapper__link {
+        margin-right: 32px;
     }
 }
 
