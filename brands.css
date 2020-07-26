@@ -31,8 +31,7 @@
 }
 
 .technique-brands__header {
-    height: 80px;
-    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    background: linear-gradient(270deg, #FFFFFF 30%, #F8F8F8);
     padding: 16px;
 }
 
@@ -45,7 +44,12 @@
     color: #7E7E82;
 }
 
-.brands-swiper-container {
+.brands-swiper {
+    background: #F2F2F2;
+    display: block;
+}
+
+.brands-swiper__container {
     width: 240px;
     padding-top: 16px !important; 
     background: #F2F2F2;
@@ -58,26 +62,25 @@
     width: 238px !important;
 }
 
-.brands-swiper__button {
+.brands-link {
     background: white;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
     width: 238px;
     height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
 }
 
-.brands-swiper__img {
-    margin: 18px 0 4px 16px;
+.brands-link:hover .brands-link__icon {
+    opacity: 0.5;
 }
 
-.brands-swiper__button-icon {
-    margin: 16px 16px 0 0;
-}
-
-.brands-swiper-pagination {
+.brands-swiper__pagination {
     padding-top: 16px;
-    position: static !important;   
+    position: static !important;  
+    margin-bottom: 38px; 
 }
 
 .swiper-pagination-bullet {
@@ -89,4 +92,84 @@
 
 .swiper-pagination-bullet-active {
     background: #B5B6BC !important;
+}
+
+.brands-container {
+    display: none;
+}
+
+.brands-container--appearance {
+    animation: appearance 1s;
+}
+
+.read-more {
+    padding: 8px 0 34px 32px;
+    background: #F2F2F2;
+    display: none;
+}
+
+.read-more__button:focus {
+    outline: none;
+}
+
+.read-more__button:active {
+    transform: scale(1.05);
+}
+
+.read-more__text {
+    font-family: "TT Lakes-Medium";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+.read-more__arrows {
+    margin-right: 17px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .brands-swiper {
+        display: none;
+    }    
+
+    .technique-brands__header {
+        padding: 16px 0 16px 24px;
+        background: linear-gradient(270deg, #FFFFFF 1.39%, #F8F8F8);
+    }
+
+    .brands-container {
+        display: flex;
+        background: #F2F2F2;
+        flex-wrap: wrap;
+        padding: 24px 0 0 24px;
+    }
+
+    .brands-container__link:nth-child(n+7) {
+        display: none;
+    }
+
+    .brands-container__link {
+        flex-basis: 224px;
+        margin: 0 24px 16px 0;
+    }
+
+    .read-more__arrows {
+        display: inline-block;
+    }
+
+    .read-more {
+        display: block;
+    }
+}
+
+@keyframes appearance {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

@@ -9,3 +9,22 @@ let mySwiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
     },
 })
+
+let allBrandLinks = document.querySelectorAll('.brands-container__link');
+//let invisibleBrandLinks = document.querySelectorAll('.brands-container__link:nth-child(n+7)');
+let readMoreButton = document.querySelector('.read-more__button');
+let brandsContainer = document.querySelector('.brands-container');
+
+readMoreButton.addEventListener('click', function() {
+  for (let i = 0; i < allBrandLinks.length; i++) {
+    //invisibleBrandLinks[i].classList.toggle('brands-container__link--invisible');
+    if (allBrandLinks[i].style.display === "none") {
+      allBrandLinks[i].style.display = "block";
+    }
+  }
+
+  for (let i = 0; i < allBrandLinks.length; i++) {  
+    allBrandLinks[i].classList.toggle('brands-container--appearance');
+  }
+
+});
