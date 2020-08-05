@@ -122,6 +122,10 @@
     display: none;
 }
 
+.read-more__button {
+    background: #F2F2F2;    
+}
+
 .read-more__button:focus {
     outline: none;
 }
@@ -185,7 +189,7 @@
         width: 768px;
     }
 
-    .read-more__read-more-wrapper {
+    .read-more-wrapper__read-more {
         margin: 0 auto;
     }
 
@@ -222,7 +226,7 @@
         width: 100%;
     }
 
-    .read-more__read-more-wrapper {
+    .read-more-wrapper__read-more {
         margin: 0;
     }
 }
