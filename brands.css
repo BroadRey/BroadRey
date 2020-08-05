@@ -26,6 +26,7 @@
 .wrapper {
     max-width: 1120px;
     margin: 0 auto;
+    background: #F2F2F2;
 }
 
 .technique-brands {
@@ -47,6 +48,8 @@
     letter-spacing: 0.7;
     text-transform: uppercase;
     color: #7E7E82;
+    width: 320px;
+    margin: 0 auto;
 }
 
 .brands-swiper {
@@ -123,6 +126,10 @@
     outline: none;
 }
 
+.read-more__button:hover .read-more__text {
+    color: grey;
+}
+
 .read-more__button:active {
     transform: scale(1.05);
 }
@@ -150,6 +157,10 @@
         background: linear-gradient(270deg, #FFFFFF 1.39%, #F8F8F8);
     }
 
+    .technique-brands__text {
+        width: 768px;
+    }
+
     .brands-wrapper {
         display: flex;
         background: #F2F2F2;
@@ -166,6 +177,18 @@
         margin: 0 24px 16px 0;
     }
 
+    .read-more-wrapper {
+        background: #F2F2F2;
+    }
+
+    .read-more {
+        width: 768px;
+    }
+
+    .read-more__read-more-wrapper {
+        margin: 0 auto;
+    }
+
     .read-more__arrows {
         display: inline-block;
     }
@@ -179,6 +202,11 @@
     .technique-brands__header {
         padding: 16px 32px;
     }
+
+    .technique-brands__text {
+        width: 100%;
+        margin: 0;
+    }
     
     .brands-wrapper {
         padding-left: 32px;
@@ -187,6 +215,15 @@
 
     .brands-wrapper__link {
         margin-right: 32px;
+        flex-basis: 240px;
+    }
+
+    .read-more {
+        width: 100%;
+    }
+
+    .read-more__read-more-wrapper {
+        margin: 0;
     }
 }
 
